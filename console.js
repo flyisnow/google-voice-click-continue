@@ -2,7 +2,7 @@
 //How much loop Time needed
 var loopTimes=5000;
 //Sleep between each loop
-var sleepMicroSecond=31050;
+var sleepMicroSecond=350;
 
  
 
@@ -23,7 +23,7 @@ var element=x[(x.length-1)];
  main function
  **/
 function c(){
-if('Continue »'==element.innerHTML){
+if('Continue »'==element.innerHTML || '继续 »'==element.innerHTML ){
  // Do something after the sleep!
 	 dispatchMouseEvent(element, 'mouseover', true, true);
     dispatchMouseEvent(element, 'mousedown', true, true);
